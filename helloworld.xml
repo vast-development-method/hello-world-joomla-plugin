@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="6.0" group="privacy" method="upgrade">
+	<name>PLG_PRIVACY_HELLOWORLD</name>
+	<creationDate>23rd July, 2026</creationDate>
+	<author>Llewellyn</author>
+	<authorEmail>joomla@vdm.io</authorEmail>
+	<authorUrl>https://www.vdm.io</authorUrl>
+	<copyright>Copyright (C) 2015. All Rights Reserved</copyright>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>2.0.0</version>
+	<namespace path="src">JCB\Plugin\Privacy\Helloworld</namespace>
+	<description>PLG_PRIVACY_HELLOWORLD_XML_DESCRIPTION</description>
+
+	<!-- [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Plugin\MainXML 291] Scripts to run on installation -->
+	<scriptfile>script.php</scriptfile>
+
+	<!-- [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Plugin\MainXML 339] Language files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB/plg_privacy_helloworld.ini</language>
+		<language tag="en-GB">en-GB/plg_privacy_helloworld.sys.ini</language>
+	</languages>
+
+	<!-- [VDM\Joomla\Componentbuilder\Compiler\Architecture\JoomlaSix\Plugin\MainXML 378] Plugin files -->
+	<files>
+		<folder plugin="helloworld">services</folder>
+		<filename>README.md</filename>
+		<filename>index.html</filename>
+		<folder>services</folder>
+		<folder>src</folder>
+	</files>
+</extension>
